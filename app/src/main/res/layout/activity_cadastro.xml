@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CadastroActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:padding="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_mao_icon1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTexto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        app:layout_constraintVertical_bias="0.361">
+
+        <TextView
+            android:id="@+id/textVamosContinuar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Vamos continuar,"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textContiuarCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="com seu cadastro."
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLogin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutTexto">
+
+        //*****Edit_nome e InputTexto Nome********
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_layoutNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_person_cinza_24dp"
+                android:drawablePadding="5dp"
+                android:hint="Nome da empresa"
+                android:inputType="text"
+                android:textColor="#008577"
+                android:textColorHint="#008577"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        //******************Edit_Email e InputTexte Email**********
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_layoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email_cinza_24dp"
+                android:drawablePadding="5dp"
+                android:hint="digite um e-mail válido"
+                android:inputType="textWebEmailAddress"
+                android:textColor="#008577" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //******************Edit_Email e InputTexte Telefone**********
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_layoutTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTelefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_phone_24dp"
+                android:drawablePadding="5dp"
+                android:hint="Telefone"
+                android:inputType="phone"
+                android:textColor="#008577" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //******************Edit_Email e InputTexte CNPJ**********
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_layoutCNPJ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editCNPJ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_empresa_24dp"
+                android:drawablePadding="5dp"
+                android:hint="CNPJ"
+                android:inputType="phone"
+                android:textColor="#008577" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        //***********Edit_senha e Input Senha*********************
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_layoutSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:counterEnabled="true"
+            app:counterMaxLength="8"
+            app:passwordToggleEnabled="true">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_cadeado_cinza_24dp"
+                android:drawablePadding="5dp"
+                android:hint="crie uma senha"
+                android:inputType="textWebPassword"
+                android:maxLength="8"
+                android:textColor="#008577" />
+        </com.google.android.material.textfield.TextInputLayout>
+        //*************Botão para cadastre-se*************
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_customizado"
+            android:elevation="16dp"
+            android:text="Cadastrar"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tx_termosUso"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TermosUso"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#17857E</item>
+        <item name="colorPrimaryDark">#136A53</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="botaoPadrao" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#5AB7AE</item>
+        <item name="colorButtonNormal">#17857E</item>
+        <item name="android:textColor">#FFFF</item>
+    </style>
+
+    //PERSONALIZA  O TEMA DO BOTTOM NAVIGATION
+    <style name="CustomBottomNav" parent= "Widget.Design.BottomNavigationView">
+        <item name="android:background">?android:attr/windowBackground</item>
+      // name="android:itemTextAppearance">?android:attr/windowBackground
+      // name="android:itemIconTint">?android:attr/windowBackground
+
+    </style>
+
+
+</resources>

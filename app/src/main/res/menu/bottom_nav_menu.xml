@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_action_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_mensagens"
+        android:icon="@drawable/ic_action_message"
+        android:title="@string/mensagens" />
+
+    <item
+        android:id="@+id/navigation_opcoes"
+        android:icon="@drawable/ic_action_menu"
+        android:title="@string/op_es" />
+
+    <item
+        android:id="@+id/navigation_exit"
+        android:icon="@drawable/ic_action_exit"
+        android:title="Sair" />
+
+</menu>

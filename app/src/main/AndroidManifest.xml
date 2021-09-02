@@ -4,6 +4,7 @@
     package="com.ssolutionsdeveloper.ecocycle">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -13,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.MessageActivity"></activity>
+        <activity android:name=".activity.CadastroEnderecoActivity"></activity>
+        <activity android:name=".activity.CadastroEmpresaActivity" />
+        <activity android:name=".activity.MessageActivity" />
         <activity android:name=".activity.OpcoesActivity" />
         <activity android:name=".activity.PrincipalActivity" />
         <activity android:name=".activity.CadastroActivity" />
@@ -24,14 +27,11 @@
                 <action
                     android:name="android.intent.action.MAIN"
                     tools:ignore="DuplicateActivity" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-
 </manifest>

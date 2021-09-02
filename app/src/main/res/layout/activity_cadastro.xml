@@ -115,7 +115,7 @@
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/editTelefone"
+                android:id="@+id/editDDD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_phone_24dp"

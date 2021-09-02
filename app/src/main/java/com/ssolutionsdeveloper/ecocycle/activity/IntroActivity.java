@@ -42,7 +42,6 @@ public class IntroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_intro);
 
         recyclerIntroducao = findViewById(R.id.idRecycleIntroducao);
-
         //***********DEFINIR LAYOUT de introducao para lateral **********
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(HORIZONTAL);
@@ -66,7 +65,6 @@ public class IntroActivity extends AppCompatActivity {
         introd = new Introducoes("",R.drawable.imagem4);
         this.introducoes.add(introd);
     }
-
     @Override
     protected void onStart() {
         super.onStart();
@@ -78,7 +76,7 @@ public class IntroActivity extends AppCompatActivity {
         startVibrate();
     }
    public void irCadastrar(View view){ startActivity(new Intent(this,
-            CadastroActivity.class));
+            CadastroEmpresaActivity.class));
             startVibrate();
     }
     public void verificarUsuarioLogado(){
